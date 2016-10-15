@@ -1,0 +1,46 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="STR" dir="computer_vision/trackers/STR">
+  <doc>
+    <description>KCF tracker implementation.http://www.samhare.net/research/struck</description>
+  </doc>
+  <depends>video_thread</depends>
+  <header>
+    <file name="STR.h"/>
+  </header>
+  <init fun="STR_init()"/>
+  <makefile>
+    <file name="STR.c"/>
+    
+    <file name="STRuck.cpp"/>
+    <file name="Config.cpp"/>
+    <file name="Features.cpp"/>
+    <file name="HaarFeature.cpp"/>
+    <file name="HaarFeatures.cpp"/>
+    <file name="HistogramFeatures.cpp"/>
+    <file name="ImageRep.cpp"/>
+    <file name="LaRank.cpp"/>
+    <file name="MultiFeatures.cpp"/>
+    <file name="RawFeatures.cpp"/>
+    <file name="Sampler.cpp"/>
+    <file name="Tracker.cpp"/>
+
+    <flag name="CXXFLAGS" value="I/usr/include/eigen3/"/>
+    <flag name="CXXFLAGS" value="I/home/colera/MEGAsync/paparazzi/sw/airborne/"/>
+    <flag name="CXXFLAGS" value="I/home/colera/MEGAsync/paparazzi/sw/airborne/modules/digital_cam/catia"/>
+    <flag name="CXXFLAGS" value="I$(PAPARAZZI_HOME)/sw/ext/opencv_bebop/install/include/"/>
+
+    <flag name="LDFLAGS" value="L$(PAPARAZZI_HOME)/sw/ext/opencv_bebop/install/lib" />
+  	<flag name="LDFLAGS" value="lopencv_imgcodecs" />
+  	<flag name="LDFLAGS" value="lopencv_imgproc" />
+  	<flag name="LDFLAGS" value="lopencv_core" />
+  	<flag name="LDFLAGS" value="L$(PAPARAZZI_HOME)/sw/ext/opencv_bebop/install/share/OpenCV/3rdparty/lib" />
+  	<flag name="LDFLAGS" value="lzlib" />
+  	<flag name="LDFLAGS" value="llibpng" />
+  	<flag name="LDFLAGS" value="lstdc++" />
+  	<flag name="LDFLAGS" value="ldl" />
+  	<flag name="LDFLAGS" value="lm" />
+  	<flag name="LDFLAGS" value="lpthread" />
+  	<flag name="LDFLAGS" value="lrt" />
+  </makefile>
+</module>

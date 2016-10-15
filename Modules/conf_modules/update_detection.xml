@@ -1,0 +1,16 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="update_detection">
+  <doc>
+    <description>Receive the bounding box parameters from the stereoboard</description>
+  </doc>
+   <depends>stereocam</depends>
+  <header>
+    <file name="update_detection.h"/>
+  </header>
+  <init fun="update_detection_init()"/>
+  <periodic fun="update_detection_periodic()" autorun="TRUE"/>
+  <makefile>
+    <file name="update_detection.c"/>
+  </makefile>
+</module>

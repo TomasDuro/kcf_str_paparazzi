@@ -1,0 +1,14 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="selfie_drone_yaw_controller">
+  <doc>
+    <description>yaw control</description>
+  </doc>
+  <header>
+    <file name="selfie_drone_yaw_controller.h"/>
+  </header>
+  <init fun="yaw_controller_init()"/>
+  <makefile>
+    <file name="selfie_drone_yaw_controller.c"/>
+  </makefile>
+</module>

@@ -1,0 +1,15 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="video_crop" dir="computer_vision">
+  <doc>
+    <description>Crops the frames from the video camera.</description>
+  </doc>
+  <depends>video_thread</depends>
+  <header>
+    <file name="video_crop.h"/>
+  </header>
+  <init fun="video_crop_init()"/>
+  <makefile>
+    <file name="video_crop.c"/>
+  </makefile>
+</module>

@@ -1,0 +1,15 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="selfie_drone_waypoint_generator">
+  <doc>
+    <description>Calculates waypoints in order to maintain the aircraft close to the person it is following</description>
+  </doc>
+  <header>
+    <file name="selfie_drone_waypoint_generator.h"/>
+  </header>
+  <init fun="waypoint_generator_init()"/>
+  <makefile>
+    <file name="selfie_drone_waypoint_generator.c"/>
+  </makefile>
+</module>
+

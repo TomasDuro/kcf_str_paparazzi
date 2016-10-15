@@ -1,0 +1,15 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="selfie_drone_altitude_controller">
+  <doc>
+    <description>Altitude controller for the selfie drone</description>
+  </doc>
+  <header>
+    <file name="selfie_drone_altitude_controller.h"/>
+  </header>
+  <init fun="altitude_controller_init()"/>
+  <makefile>
+    <file name="selfie_drone_altitude_controller.c"/>
+  </makefile>
+</module>
+

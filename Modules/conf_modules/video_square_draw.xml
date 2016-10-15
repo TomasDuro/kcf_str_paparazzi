@@ -1,0 +1,14 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="video_square_draw" dir="computer_vision">
+  <doc>
+    <description>Draw a square on a the frames from the video camera.</description>
+  </doc>
+  <header>
+    <file name="video_square_draw.h"/>
+  </header>
+  <init fun="video_square_draw_init()"/>
+  <makefile>
+    <file name="video_square_draw.c"/>
+  </makefile>
+</module>
