@@ -1,4 +1,4 @@
-# SelfieDrone
+# Paparazzi - Struck + KCF
 
 This repository contains code used and developed during the master thesis entitled: "Tracking and Following a Moving Person Onboard a Pocket Drone”.
 
